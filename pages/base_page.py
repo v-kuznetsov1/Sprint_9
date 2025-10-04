@@ -40,7 +40,7 @@ class BasePage():
     
 
     def get_text_element(self, locator):
-        text_element = self.driver.find_element(*locator)
+        text_element = self.find_element_by_locator(locator)
         return text_element.text
     
 
